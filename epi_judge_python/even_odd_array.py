@@ -6,11 +6,23 @@ from test_framework import generic_test
 from test_framework.test_failure import TestFailure
 from test_framework.test_utils import enable_executor_hook
 
+# sort array so even numbers are first
 
 def even_odd(A: List[int]) -> None:
-    # TODO - you fill in here.
-    return
+    left, right = 0, len(A)-1
+    while left < right:
+        if isEven(A[left]):
+            left += 1
+        else:
+            swap(A, left, right)
+            right -= 1
+    return A
 
+def isEven(i: int)->bool:
+    return True if i % 2 == 0 else False
+
+def swap(a:list, l:int, r:int)->None:
+    a[l], a[r] = a[r], a[l]
 
 @enable_executor_hook
 def even_odd_wrapper(executor, A):
