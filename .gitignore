@@ -12,7 +12,7 @@ __pycache__/
 # Visual Studio 2017 files
 .vs
 /epi_judge_cpp/vs
-/epi_judge_cpp_solutions/vs
+/epi_judge_cpp_solutions/vc
 /epi_judge_cpp/Release
 /epi_judge_cpp_solutions/Release
 /epi_judge_cpp/Debug
@@ -25,5 +25,6 @@ build
 epi_judge_java/java_build/
 *.class
 
+/epi_judge_*_solutions/
 # OS X specific files
 .DS_Store
